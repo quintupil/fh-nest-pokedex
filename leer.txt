@@ -1,0 +1,71 @@
+Command:
+
+Crear proyecto:
+nest new pokedex
+
+Remover Libreria prettier: (Para que no moleste al desarrollar)
+yarn remove prettier
+yarn remove eslint-config-prettier eslint-plugin-prettier
+
+Error en vsc: 
+Como resuelvo este error en visual studio code ? 
+"Cannot find module '@nestjs/common' or its corresponding type declarations.ts(2307)"
+
+C:\Users\garci\Documents\Udemy\Nest\fh\backend\03-pokedex>yarn -v
+4.12.0
+C:\Users\garci\Documents\Udemy\Nest\fh\backend\03-pokedex>yarn config get nodeLinker
+pnp
+C:\Users\garci\Documents\Udemy\Nest\fh\backend\03-pokedex>yarn why @nestjs/common
+└─ pokedex@workspace:.
+   └─ @nestjs/common@npm:11.1.12 [caaa5] (via npm:^11.0.1 [caaa5])
+
+La dependencia está instalada, pero como usas Yarn 4 + PnP, 
+VS Code no está resolviendo el filesystem virtual de Yarn. 
+La corrección estándar es instalar los Yarn SDKs y hacer que VS Code use el TypeScript del workspace
+
+1) Genera los SDKs para VS Code
+En la raíz del proyecto (03-pokedex):
+
+yarn dlx @yarnpkg/sdks vscode
+
+Eso crea/actualiza la carpeta .yarn/sdks (y ajustes asociados).
+
+2) En VS Code, usa el TypeScript del workspace
+	* Ctrl+Shift+P
+	* TypeScript: Select TypeScript Version
+	* Selecciona Use Workspace Version
+
+3) Reinicia el TS Server / recarga ventana
+	* Ctrl+Shift+P → TypeScript: Restart TS Server		
+	* Si persiste: Ctrl+Shift+P → Developer: Reload Window
+	
+Servir Contenido statico
+yarn add @nestjs/serve-static
+
+Error: He agregado la siguiente librería en nest "yarn add @nestjs/serve-static", 
+se instalo bien según consola cmd, pero al ejecutar el proyecto tengo el siguiente error: 
+[Nest] 29172 - 22-01-2026, 10:40:57 p. m. ERROR [PackageLoader] The "express" package is missing. 
+Please, make sure to install it to take advantage of ServeStaticModule.
+
+Solución:
+Ese mensaje es literal: @nestjs/serve-static intenta cargar express y no lo encuentra en tus dependencias. 
+Con Nest (y más con Yarn Berry/PnP), algunos paquetes quedan como peer dependencies y debes instalarlos 
+explícitamente.
+
+A continuación tienes las 2 rutas posibles (elige la que corresponda a tu aplicación).
+
+A) Estás usando Express (lo más común / default en Nest)
+
+Instala Express (y opcionalmente los tipos):
+yarn add express
+yarn add -D @types/express
+
+Luego reinicia el servidor (yarn start:dev).
+Si por alguna razón tu proyecto no tiene el adaptador de Express, instálalo también:
+
+yarn add @nestjs/platform-express
+
+Nest usa Express por defecto, pero si el adaptador/peer deps no están presentes, 
+aparecen errores de PackageLoader.
+
+
