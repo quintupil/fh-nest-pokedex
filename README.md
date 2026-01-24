@@ -2,33 +2,34 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
-## Project setup
+## Ejecutar en desarrollo
+
+1. Clonar el repositorio
+2. Ejecutar
 
 ```bash
 $ yarn install
 ```
 
-## Compile and run the project
+3. Tener Nest CLI instalado
 
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
+```
+npm i -g @nestjs/cli
 ```
 
-# Crear un recurso (--no-spec para no incluir test)
+4. Crear un recurso (--no-spec para no incluir test)
 
 ```
 nest g res pokemon --no-spec
 ```
 
-# Docker
+5. Levantar la base de datos
 
 ```
 docker-compose up -d
 ```
+
+## Stack usado
+
+- MongoDB
+- Nest
