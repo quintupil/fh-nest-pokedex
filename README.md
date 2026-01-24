@@ -29,6 +29,12 @@ nest g res pokemon --no-spec
 docker-compose up -d
 ```
 
+6. Instalar libreria para conectar a mongo
+
+```
+yarn add @nestjs/mongoose mongoose
+```
+
 ## Stack usado
 
 - MongoDB

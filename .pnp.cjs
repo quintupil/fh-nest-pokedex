@@ -34,6 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@nestjs/common", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12"],\
           ["@nestjs/core", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12"],\
           ["@nestjs/mapped-types", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:2.1.0"],\
+          ["@nestjs/mongoose", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.0.4"],\
           ["@nestjs/platform-express", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12"],\
           ["@nestjs/schematics", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.0.9"],\
           ["@nestjs/serve-static", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:5.0.4"],\
@@ -46,6 +47,7 @@ const RAW_RUNTIME_STATE =
           ["express", "npm:5.2.1"],\
           ["globals", "npm:16.5.0"],\
           ["jest", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:30.2.0"],\
+          ["mongoose", "npm:9.1.5"],\
           ["pokedex", "workspace:."],\
           ["reflect-metadata", "npm:0.2.2"],\
           ["rxjs", "npm:7.8.2"],\
@@ -2043,6 +2045,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@mongodb-js/saslprep", [\
+      ["npm:1.4.5", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@mongodb-js-saslprep-npm-1.4.5-42fd615c7e-10c0.zip/node_modules/@mongodb-js/saslprep/",\
+        "packageDependencies": [\
+          ["@mongodb-js/saslprep", "npm:1.4.5"],\
+          ["sparse-bitfield", "npm:3.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@napi-rs/wasm-runtime", [\
       ["npm:0.2.12", {\
         "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@napi-rs-wasm-runtime-npm-0.2.12-8f0d65e253-10c0.zip/node_modules/@napi-rs/wasm-runtime/",\
@@ -2140,14 +2152,14 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["@nestjs/core", [\
       ["npm:11.1.12", {\
-        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@nestjs-core-npm-11.1.12-09bcf98276-10c0.zip/node_modules/@nestjs/core/",\
+        "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-a5f3e332d5/node_modules/@nestjs/core/",\
         "packageDependencies": [\
           ["@nestjs/core", "npm:11.1.12"]\
         ],\
         "linkType": "SOFT"\
       }],\
       ["virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12", {\
-        "packageLocation": "./.yarn/__virtual__/@nestjs-core-virtual-a5f3e332d5/7/AppData/Local/Yarn/Berry/cache/@nestjs-core-npm-11.1.12-09bcf98276-10c0.zip/node_modules/@nestjs/core/",\
+        "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-a5f3e332d5/node_modules/@nestjs/core/",\
         "packageDependencies": [\
           ["@nestjs/common", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12"],\
           ["@nestjs/core", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12"],\
@@ -2216,6 +2228,40 @@ const RAW_RUNTIME_STATE =
           "class-transformer",\
           "class-validator",\
           "reflect-metadata"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nestjs/mongoose", [\
+      ["npm:11.0.4", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@nestjs-mongoose-npm-11.0.4-f729cec6c0-10c0.zip/node_modules/@nestjs/mongoose/",\
+        "packageDependencies": [\
+          ["@nestjs/mongoose", "npm:11.0.4"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.0.4", {\
+        "packageLocation": "./.yarn/__virtual__/@nestjs-mongoose-virtual-43fabeba7f/7/AppData/Local/Yarn/Berry/cache/@nestjs-mongoose-npm-11.0.4-f729cec6c0-10c0.zip/node_modules/@nestjs/mongoose/",\
+        "packageDependencies": [\
+          ["@nestjs/common", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12"],\
+          ["@nestjs/core", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12"],\
+          ["@nestjs/mongoose", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.0.4"],\
+          ["@types/mongoose", null],\
+          ["@types/nestjs__common", null],\
+          ["@types/nestjs__core", null],\
+          ["@types/rxjs", null],\
+          ["mongoose", "npm:9.1.5"],\
+          ["rxjs", "npm:7.8.2"]\
+        ],\
+        "packagePeers": [\
+          "@nestjs/common",\
+          "@nestjs/core",\
+          "@types/mongoose",\
+          "@types/nestjs__common",\
+          "@types/nestjs__core",\
+          "@types/rxjs",\
+          "mongoose",\
+          "rxjs"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2802,6 +2848,25 @@ const RAW_RUNTIME_STATE =
           ["@types/methods", "npm:1.1.4"],\
           ["@types/superagent", "npm:8.1.9"],\
           ["@types/supertest", "npm:6.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/webidl-conversions", [\
+      ["npm:7.0.3", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@types-webidl-conversions-npm-7.0.3-dab9692d39-10c0.zip/node_modules/@types/webidl-conversions/",\
+        "packageDependencies": [\
+          ["@types/webidl-conversions", "npm:7.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/whatwg-url", [\
+      ["npm:13.0.0", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@types-whatwg-url-npm-13.0.0-608dd9833f-10c0.zip/node_modules/@types/whatwg-url/",\
+        "packageDependencies": [\
+          ["@types/webidl-conversions", "npm:7.0.3"],\
+          ["@types/whatwg-url", "npm:13.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4050,6 +4115,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["bser", "npm:2.1.1"],\
           ["node-int64", "npm:0.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["bson", [\
+      ["npm:7.1.1", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/bson-npm-7.1.1-865858d1df-10c0.zip/node_modules/bson/",\
+        "packageDependencies": [\
+          ["bson", "npm:7.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6680,6 +6754,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["kareem", [\
+      ["npm:3.0.0", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/kareem-npm-3.0.0-bb766d29ae-10c0.zip/node_modules/kareem/",\
+        "packageDependencies": [\
+          ["kareem", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["keyv", [\
       ["npm:4.5.4", {\
         "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/keyv-npm-4.5.4-4c8e2cf7f7-10c0.zip/node_modules/keyv/",\
@@ -6911,6 +6994,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["memory-pager", [\
+      ["npm:1.5.0", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/memory-pager-npm-1.5.0-46e20e6c81-10c0.zip/node_modules/memory-pager/",\
+        "packageDependencies": [\
+          ["memory-pager", "npm:1.5.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["merge-descriptors", [\
       ["npm:2.0.0", {\
         "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/merge-descriptors-npm-2.0.0-abd9f0b061-10c0.zip/node_modules/merge-descriptors/",\
@@ -7122,6 +7214,99 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["minimist", "npm:1.2.8"],\
           ["mkdirp", "npm:0.5.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mongodb", [\
+      ["npm:7.0.0", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/mongodb-npm-7.0.0-e79b56fb74-10c0.zip/node_modules/mongodb/",\
+        "packageDependencies": [\
+          ["mongodb", "npm:7.0.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:b4d0a83c3655502f79fb1ef55fd61f4efd5a536eae9677578a61f42199f077ad0a60683f62c431019eb74facb4bfdf6fe74fd542655b5c1528fde466504e5e10#npm:7.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/mongodb-virtual-04db4a23a3/7/AppData/Local/Yarn/Berry/cache/mongodb-npm-7.0.0-e79b56fb74-10c0.zip/node_modules/mongodb/",\
+        "packageDependencies": [\
+          ["@aws-sdk/credential-providers", null],\
+          ["@mongodb-js/saslprep", "npm:1.4.5"],\
+          ["@mongodb-js/zstd", null],\
+          ["@types/aws-sdk__credential-providers", null],\
+          ["@types/gcp-metadata", null],\
+          ["@types/kerberos", null],\
+          ["@types/mongodb-client-encryption", null],\
+          ["@types/mongodb-js__zstd", null],\
+          ["@types/snappy", null],\
+          ["@types/socks", null],\
+          ["bson", "npm:7.1.1"],\
+          ["gcp-metadata", null],\
+          ["kerberos", null],\
+          ["mongodb", "virtual:b4d0a83c3655502f79fb1ef55fd61f4efd5a536eae9677578a61f42199f077ad0a60683f62c431019eb74facb4bfdf6fe74fd542655b5c1528fde466504e5e10#npm:7.0.0"],\
+          ["mongodb-client-encryption", null],\
+          ["mongodb-connection-string-url", "npm:7.0.0"],\
+          ["snappy", null],\
+          ["socks", null]\
+        ],\
+        "packagePeers": [\
+          "@aws-sdk/credential-providers",\
+          "@mongodb-js/zstd",\
+          "@types/aws-sdk__credential-providers",\
+          "@types/gcp-metadata",\
+          "@types/kerberos",\
+          "@types/mongodb-client-encryption",\
+          "@types/mongodb-js__zstd",\
+          "@types/snappy",\
+          "@types/socks",\
+          "gcp-metadata",\
+          "kerberos",\
+          "mongodb-client-encryption",\
+          "snappy",\
+          "socks"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mongodb-connection-string-url", [\
+      ["npm:7.0.0", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/mongodb-connection-string-url-npm-7.0.0-33e9625fad-10c0.zip/node_modules/mongodb-connection-string-url/",\
+        "packageDependencies": [\
+          ["@types/whatwg-url", "npm:13.0.0"],\
+          ["mongodb-connection-string-url", "npm:7.0.0"],\
+          ["whatwg-url", "npm:14.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mongoose", [\
+      ["npm:9.1.5", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/mongoose-npm-9.1.5-b4d0a83c36-10c0.zip/node_modules/mongoose/",\
+        "packageDependencies": [\
+          ["kareem", "npm:3.0.0"],\
+          ["mongodb", "virtual:b4d0a83c3655502f79fb1ef55fd61f4efd5a536eae9677578a61f42199f077ad0a60683f62c431019eb74facb4bfdf6fe74fd542655b5c1528fde466504e5e10#npm:7.0.0"],\
+          ["mongoose", "npm:9.1.5"],\
+          ["mpath", "npm:0.9.0"],\
+          ["mquery", "npm:6.0.0"],\
+          ["ms", "npm:2.1.3"],\
+          ["sift", "npm:17.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mpath", [\
+      ["npm:0.9.0", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/mpath-npm-0.9.0-e79cc94aea-10c0.zip/node_modules/mpath/",\
+        "packageDependencies": [\
+          ["mpath", "npm:0.9.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mquery", [\
+      ["npm:6.0.0", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/mquery-npm-6.0.0-c5ea576347-10c0.zip/node_modules/mquery/",\
+        "packageDependencies": [\
+          ["mquery", "npm:6.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7592,6 +7777,7 @@ const RAW_RUNTIME_STATE =
           ["@nestjs/common", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12"],\
           ["@nestjs/core", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12"],\
           ["@nestjs/mapped-types", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:2.1.0"],\
+          ["@nestjs/mongoose", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.0.4"],\
           ["@nestjs/platform-express", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.1.12"],\
           ["@nestjs/schematics", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:11.0.9"],\
           ["@nestjs/serve-static", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:5.0.4"],\
@@ -7604,6 +7790,7 @@ const RAW_RUNTIME_STATE =
           ["express", "npm:5.2.1"],\
           ["globals", "npm:16.5.0"],\
           ["jest", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:30.2.0"],\
+          ["mongoose", "npm:9.1.5"],\
           ["pokedex", "workspace:."],\
           ["reflect-metadata", "npm:0.2.2"],\
           ["rxjs", "npm:7.8.2"],\
@@ -8046,6 +8233,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["sift", [\
+      ["npm:17.1.3", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/sift-npm-17.1.3-7bf1276637-10c0.zip/node_modules/sift/",\
+        "packageDependencies": [\
+          ["sift", "npm:17.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["signal-exit", [\
       ["npm:3.0.7", {\
         "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/signal-exit-npm-3.0.7-bd270458a3-10c0.zip/node_modules/signal-exit/",\
@@ -8142,6 +8338,16 @@ const RAW_RUNTIME_STATE =
           ["buffer-from", "npm:1.1.2"],\
           ["source-map", "npm:0.6.1"],\
           ["source-map-support", "npm:0.5.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["sparse-bitfield", [\
+      ["npm:3.0.3", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/sparse-bitfield-npm-3.0.3-cb80d0c89f-10c0.zip/node_modules/sparse-bitfield/",\
+        "packageDependencies": [\
+          ["memory-pager", "npm:1.5.0"],\
+          ["sparse-bitfield", "npm:3.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8499,6 +8705,16 @@ const RAW_RUNTIME_STATE =
           ["@tokenizer/token", "npm:0.3.0"],\
           ["ieee754", "npm:1.2.1"],\
           ["token-types", "npm:6.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["tr46", [\
+      ["npm:5.1.1", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/tr46-npm-5.1.1-88f3ca645b-10c0.zip/node_modules/tr46/",\
+        "packageDependencies": [\
+          ["punycode", "npm:2.3.1"],\
+          ["tr46", "npm:5.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8882,7 +9098,7 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["unrs-resolver", [\
       ["npm:1.11.1", {\
-        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/unrs-resolver-npm-1.11.1-9828edd1f1-10c0.zip/node_modules/unrs-resolver/",\
+        "packageLocation": "./.yarn/unplugged/unrs-resolver-npm-1.11.1-9828edd1f1/node_modules/unrs-resolver/",\
         "packageDependencies": [\
           ["@unrs/resolver-binding-android-arm-eabi", "npm:1.11.1"],\
           ["@unrs/resolver-binding-android-arm64", "npm:1.11.1"],\
@@ -9013,6 +9229,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["webidl-conversions", [\
+      ["npm:7.0.0", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/webidl-conversions-npm-7.0.0-e8c8e30c68-10c0.zip/node_modules/webidl-conversions/",\
+        "packageDependencies": [\
+          ["webidl-conversions", "npm:7.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["webpack", [\
       ["npm:5.104.1", {\
         "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/webpack-npm-5.104.1-e9b2ae6a2f-10c0.zip/node_modules/webpack/",\
@@ -9074,6 +9299,17 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/webpack-sources-npm-3.3.3-62a2b4959b-10c0.zip/node_modules/webpack-sources/",\
         "packageDependencies": [\
           ["webpack-sources", "npm:3.3.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["whatwg-url", [\
+      ["npm:14.2.0", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/whatwg-url-npm-14.2.0-67b670990c-10c0.zip/node_modules/whatwg-url/",\
+        "packageDependencies": [\
+          ["tr46", "npm:5.1.1"],\
+          ["webidl-conversions", "npm:7.0.0"],\
+          ["whatwg-url", "npm:14.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
