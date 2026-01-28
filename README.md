@@ -5,10 +5,15 @@
 ## Ejecutar en desarrollo
 
 1. Clonar el repositorio
+
 2. Ejecutar
 
 ```bash
 $ yarn install
+```
+
+```bash
+$ yarn start:dev
 ```
 
 3. Tener Nest CLI instalado
@@ -33,6 +38,16 @@ docker-compose up -d
 
 ```
 yarn add @nestjs/mongoose mongoose
+```
+
+7. Instalar libreria de validacion (npm / yarn)
+
+```
+npm i class-validator class-transformer
+```
+
+```
+yarn add  class-validator class-transformer
 ```
 
 ## Stack usado
