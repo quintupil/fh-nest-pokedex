@@ -9,11 +9,7 @@
 2. Ejecutar
 
 ```bash
-$ yarn install
-```
-
-```bash
-$ yarn start:dev
+yarn install
 ```
 
 3. Tener Nest CLI instalado
@@ -60,6 +56,12 @@ nest g mo common
 
 ```bash
 nest g pi common/pipes/parseMongoId --no-spec
+```
+
+### Ejecutar en desarrollo
+
+```bash
+yarn start:dev
 ```
 
 ### Stack usado
