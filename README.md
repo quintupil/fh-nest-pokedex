@@ -70,6 +70,12 @@ nest g pi common/pipes/parseMongoId --no-spec
 nest g res seed --no-spec
 ```
 
+### Instalar librería axios
+
+```bash
+yarn add axios
+```
+
 ### Stack usado
 
 - MongoDB
