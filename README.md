@@ -24,9 +24,15 @@ npm i -g @nestjs/cli
 docker-compose up -d
 ```
 
+5. Ejecutar en desarrollo
+
+```bash
+yarn start:dev
+```
+
 ## Documentación implementación servicio Pokemon
 
-### Crear recurso (--no-spec para no incluir test)
+### Crear recurso pokemon (--no-spec para no incluir test)
 
 ```bash
 nest g res pokemon --no-spec
@@ -58,10 +64,10 @@ nest g mo common
 nest g pi common/pipes/parseMongoId --no-spec
 ```
 
-### Ejecutar en desarrollo
+### Crear recurso seed
 
 ```bash
-yarn start:dev
+nest g res seed --no-spec
 ```
 
 ### Stack usado
