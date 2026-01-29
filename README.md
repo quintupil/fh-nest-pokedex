@@ -50,6 +50,16 @@ npm i class-validator class-transformer
 yarn add  class-validator class-transformer
 ```
 
+## Crear Modulo/Pipe
+
+```bash
+nest g mo common
+```
+
+```bash
+nest g pi common/pipes/parseMongoId --no-spec
+```
+
 ## Stack usado
 
 - MongoDB
