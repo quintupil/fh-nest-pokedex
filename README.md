@@ -18,39 +18,41 @@ $ yarn start:dev
 
 3. Tener Nest CLI instalado
 
-```
+```bash
 npm i -g @nestjs/cli
 ```
 
-4. Crear un recurso (--no-spec para no incluir test)
+4. Levantar la base de datos
 
-```
-nest g res pokemon --no-spec
-```
-
-5. Levantar la base de datos
-
-```
+```bash
 docker-compose up -d
 ```
 
-6. Instalar libreria para conectar a mongo
+## Documentación implementación servicio Pokemon
 
+### Crear recurso (--no-spec para no incluir test)
+
+```bash
+nest g res pokemon --no-spec
 ```
+
+### Instalar libreria para conectar a mongo
+
+```bash
 yarn add @nestjs/mongoose mongoose
 ```
 
-7. Instalar libreria de validacion (npm / yarn)
+### Instalar libreria de validacion (npm / yarn)
 
-```
+```bash
 npm i class-validator class-transformer
 ```
 
-```
+```bash
 yarn add  class-validator class-transformer
 ```
 
-## Crear Modulo/Pipe
+### Crear Modulo/Pipe
 
 ```bash
 nest g mo common
@@ -60,7 +62,7 @@ nest g mo common
 nest g pi common/pipes/parseMongoId --no-spec
 ```
 
-## Stack usado
+### Stack usado
 
 - MongoDB
 - Nest
