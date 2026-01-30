@@ -6,6 +6,10 @@
 
 1. Clonar el repositorio
 
+```
+https://github.com/quintupil/fh-nest-pokedex.git
+```
+
 2. Ejecutar
 
 ```bash
@@ -24,7 +28,13 @@ npm i -g @nestjs/cli
 docker-compose up -d
 ```
 
-5. Ejecutar en desarrollo
+5. Reconstruir la base de datos con la semilla
+
+```
+http://localhost:3000/api/v2/seed
+```
+
+6. Ejecutar en desarrollo
 
 ```bash
 yarn start:dev
