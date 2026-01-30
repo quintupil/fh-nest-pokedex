@@ -28,16 +28,16 @@ npm i -g @nestjs/cli
 docker-compose up -d
 ```
 
-5. Reconstruir la base de datos con la semilla
-
-```
-http://localhost:3000/api/v2/seed
-```
-
-6. Ejecutar en desarrollo
+5. Ejecutar en desarrollo
 
 ```bash
 yarn start:dev
+```
+
+6. Reconstruir la base de datos con la semilla
+
+```
+http://localhost:3000/api/v2/seed
 ```
 
 ## Documentación implementación servicio Pokemon
@@ -84,6 +84,12 @@ nest g res seed --no-spec
 
 ```bash
 yarn add axios
+```
+
+### Configuracion variables de entorno
+
+```bash
+yarn add @nestjs/config
 ```
 
 ### Stack usado
