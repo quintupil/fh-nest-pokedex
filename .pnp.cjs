@@ -51,6 +51,7 @@ const RAW_RUNTIME_STATE =
           ["express", "npm:5.2.1"],\
           ["globals", "npm:16.5.0"],\
           ["jest", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:30.2.0"],\
+          ["joi", "npm:18.0.2"],\
           ["mongoose", "npm:9.1.5"],\
           ["pokedex", "workspace:."],\
           ["reflect-metadata", "npm:0.2.2"],\
@@ -1171,6 +1172,62 @@ const RAW_RUNTIME_STATE =
           ["@eslint/core", "npm:0.17.0"],\
           ["@eslint/plugin-kit", "npm:0.4.1"],\
           ["levn", "npm:0.4.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@hapi/address", [\
+      ["npm:5.1.1", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@hapi-address-npm-5.1.1-2944e6ed9b-10c0.zip/node_modules/@hapi/address/",\
+        "packageDependencies": [\
+          ["@hapi/address", "npm:5.1.1"],\
+          ["@hapi/hoek", "npm:11.0.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@hapi/formula", [\
+      ["npm:3.0.2", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@hapi-formula-npm-3.0.2-70d8fffc4e-10c0.zip/node_modules/@hapi/formula/",\
+        "packageDependencies": [\
+          ["@hapi/formula", "npm:3.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@hapi/hoek", [\
+      ["npm:11.0.7", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@hapi-hoek-npm-11.0.7-67a33297f6-10c0.zip/node_modules/@hapi/hoek/",\
+        "packageDependencies": [\
+          ["@hapi/hoek", "npm:11.0.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@hapi/pinpoint", [\
+      ["npm:2.0.1", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@hapi-pinpoint-npm-2.0.1-4da9d8fcbc-10c0.zip/node_modules/@hapi/pinpoint/",\
+        "packageDependencies": [\
+          ["@hapi/pinpoint", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@hapi/tlds", [\
+      ["npm:1.1.4", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@hapi-tlds-npm-1.1.4-443bc2e9a1-10c0.zip/node_modules/@hapi/tlds/",\
+        "packageDependencies": [\
+          ["@hapi/tlds", "npm:1.1.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@hapi/topo", [\
+      ["npm:6.0.2", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@hapi-topo-npm-6.0.2-2ca029706c-10c0.zip/node_modules/@hapi/topo/",\
+        "packageDependencies": [\
+          ["@hapi/hoek", "npm:11.0.7"],\
+          ["@hapi/topo", "npm:6.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2527,6 +2584,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@sinonjs/commons", "npm:3.0.1"],\
           ["@sinonjs/fake-timers", "npm:13.0.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@standard-schema/spec", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/@standard-schema-spec-npm-1.1.0-d3e5ccd2e2-10c0.zip/node_modules/@standard-schema/spec/",\
+        "packageDependencies": [\
+          ["@standard-schema/spec", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6723,6 +6789,22 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["joi", [\
+      ["npm:18.0.2", {\
+        "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/joi-npm-18.0.2-79a3fbcace-10c0.zip/node_modules/joi/",\
+        "packageDependencies": [\
+          ["@hapi/address", "npm:5.1.1"],\
+          ["@hapi/formula", "npm:3.0.2"],\
+          ["@hapi/hoek", "npm:11.0.7"],\
+          ["@hapi/pinpoint", "npm:2.0.1"],\
+          ["@hapi/tlds", "npm:1.1.4"],\
+          ["@hapi/topo", "npm:6.0.2"],\
+          ["@standard-schema/spec", "npm:1.1.0"],\
+          ["joi", "npm:18.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["js-tokens", [\
       ["npm:4.0.0", {\
         "packageLocation": "../../../../../../AppData/Local/Yarn/Berry/cache/js-tokens-npm-4.0.0-0ac852e9e2-10c0.zip/node_modules/js-tokens/",\
@@ -7888,6 +7970,7 @@ const RAW_RUNTIME_STATE =
           ["express", "npm:5.2.1"],\
           ["globals", "npm:16.5.0"],\
           ["jest", "virtual:caaa5d5017865cacc5dccf93f045a496e561b8277052241e47742e1eca55d582eb64610f2048fe1483e64febbaae9413672def20b2942e544395f1c524170c7d#npm:30.2.0"],\
+          ["joi", "npm:18.0.2"],\
           ["mongoose", "npm:9.1.5"],\
           ["pokedex", "workspace:."],\
           ["reflect-metadata", "npm:0.2.2"],\

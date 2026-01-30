@@ -92,6 +92,16 @@ yarn add axios
 yarn add @nestjs/config
 ```
 
+### Instalar libreria joi (https://www.npmjs.com/package/joi)
+
+```bash
+yarn add joi
+```
+
+```bash
+npm i joi
+```
+
 ### Stack usado
 
 - MongoDB
