@@ -24,7 +24,7 @@ export class PokemonService {
     let auxDefaultLimit: number | any =
       configService.get<number>('defaultLimit');
     this.defaultLimit = +auxDefaultLimit;
-    console.log({ defaultLimit: this.defaultLimit });
+    //console.log({ defaultLimit: this.defaultLimit });
   }
 
   async create(createPokemonDto: CreatePokemonDto) {

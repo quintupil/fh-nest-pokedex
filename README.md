@@ -106,6 +106,25 @@ yarn add joi
 npm i joi
 ```
 
+### Deploy MongoDB Cloud **https://account.mongodb.com/account/login**
+
+(Agregar las IPs de Render en MongoDB Atlas - Network Access > IP Access List)
+
+### Deploy Render Cloud **https://dashboard.render.com/login**
+
+(Agregar variables de entorno y ejecutar)
+
+```
+corepack enable;
+corepack prepare yarn@4.12.0 --activate;
+yarn install --immutable;
+yarn build;
+```
+
+```
+yarn start:prod
+```
+
 ### Stack usado
 
 - MongoDB
