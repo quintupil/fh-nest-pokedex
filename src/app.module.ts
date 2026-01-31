@@ -29,7 +29,9 @@ import { JoiValidationSchema } from './config/joi.validation';
         const uri =
           config.get<string>('mongodb') ?? config.get<string>('MONGODB');
         if (!uri) throw new Error('Missing env var: MONGODB or mongodb');
-        return { uri };
+
+        const dbName = 'pokemonsdb';
+        return { uri, dbName };
       },
     }),
     PokemonModule,
