@@ -1,0 +1,19 @@
+dist/
+node_modules/
+
+.gitignore
+.git/
+.github/
+
+
+# IDE - VSCode
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+
+#File
+leer.txt

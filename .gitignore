@@ -40,3 +40,4 @@ lerna-debug.log*
 
 # Variable de entorno
 .env
+.env.prod
